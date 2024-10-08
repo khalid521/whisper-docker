@@ -1,0 +1,12 @@
+fastapi
+aiofiles
+python-multipart
+uvicorn
+
+
+flask
+torch
+whisper
+
+
+#ffmpeg -version
