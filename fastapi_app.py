@@ -10,7 +10,8 @@ torch.cuda.is_available()
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
 # Load the Whisper model:
-model = whisper.load_model("base", device=DEVICE)
+model_path="whisper/"
+model = whisper.load_model("base", device=DEVICE,download_root=model_path)
 
 app = FastAPI()
 
